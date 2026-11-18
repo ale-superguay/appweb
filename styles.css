@@ -6,9 +6,13 @@
 }
 
 body {
+     /* Tipo de letra*/
   font-family: Arial, Helvetica, sans-serif;
+  /* Color de fondo de la página */
   background: #f4f6f8;
+  /* Color del texto general */
   color: #2b2b2b;
+    /* Espacio entre líneas de texto */
   line-height: 1.5;
 }
 
@@ -16,48 +20,61 @@ header {
   background: #2f4858;
   color: #fff;
   text-align: center;
+    /* Espacio interior: 40px arriba/abajo y 20px a los lados */
   padding: 40px 20px;
 }
 
 header h1 {
   font-size: 2rem;
+    /* Separación con lo que va debajo */
   margin-bottom: 6px;
 }
-
+/* Estilo para un <h6> ahora mismo no lo utilizo */
 header h6 {
   font-size: 2rem;
   margin-bottom: 6px;
 }
 
-
 main {
+ /* Ancho máximo: en pantallas grandes no se estira más de 700px */
   max-width: 700px;
+  /* 30px arriba/abajo y "auto" a los lados = centrado horizontal */
   margin: 30px auto;
   padding: 0 20px;
 }
 
+/* Quita las viñetas de la lista */
 .lista {
   list-style: none;
 }
 
+/* Separación entre una práctica y la siguiente */
 .lista li {
   margin-bottom: 14px;
 }
 
 .lista a {
+ /* "block" hace que el enlace ocupe todo el ancho como una caja */
   display: block;
   background: #ffffff63;
+/* Esquinas redondeadas */
   padding: 18px 20px;
   border-radius: 8px;
   border-left: 5px solid #33658a;
+ /* Quita el subrayado del enlace */
   text-decoration: none;
+ /* El texto hereda el color normal en vez del azul de los enlaces */
   color: inherit;
+  /* una sombra bajo la tarjeta */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
+/* EFECTO HOVER: al pasar el ratón por encima */
 .lista a:hover {
+ /* La tarjeta sube 3px es para darle efecto*/
   transform: translateY(-3px);
+/* La sombra se hace más grande y marcada */
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 
@@ -68,11 +85,13 @@ main {
   color: #33658a;
 }
 
+/* clase mas pequeña y de otro color para la descripción */
 .descripcion {
   font-size: 0.9rem;
   color: #666;
 }
 
+/*pie de pagina*/
 footer {
   text-align: center;
   padding: 20px;
